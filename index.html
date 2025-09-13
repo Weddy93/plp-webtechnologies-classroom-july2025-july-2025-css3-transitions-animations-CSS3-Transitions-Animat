@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantHealth - Nurture Your Green Friends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">PlantHealth</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Plants</a></li>
+                <li><a href="#">Care Tools</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="cart-icon" id="cartIcon">
+                <span class="cart-icon-symbol">🛒</span>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Nurture Your Green Friends</h1>
+            <p>Discover premium plants and care products for a healthier home</p>
+            <button class="cta-button" id="shopNow">Shop Healthy Plants</button>
+        </section>
+
+        <section class="products">
+            <h2>Featured Plants & Care Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-color: #c8e6c9;">
+                        <div class="plant-icon">🌿</div>
+                        <button class="quick-view" data-id="1">Quick View</button>
+                    </div>
+                    <h3>Snake Plant</h3>
+                    <p class="price">$24.99</p>
+                    <p class="health-benefit">Purifies air · Low maintenance</p>
+                    <button class="add-to-cart" data-id="1" data-name="Snake Plant" data-price="24.99">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-color: #a5d6a7;">
+                        <div class="plant-icon">🌱</div>
+                        <button class="quick-view" data-id="2">Quick View</button>
+                    </div>
+                    <h3>Organic Potting Mix</h3>
+                    <p class="price">$14.99</p>
+                    <p class="health-benefit">Nutrient-rich · All natural</p>
+                    <button class="add-to-cart" data-id="2" data-name="Organic Potting Mix" data-price="14.99">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-color: #81c784;">
+                        <div class="plant-icon">🍃</div>
+                        <button class="quick-view" data-id="3">Quick View</button>
+                    </div>
+                    <h3>Spider Plant</h3>
+                    <p class="price">$19.99</p>
+                    <p class="health-benefit">Air purifying · Easy to grow</p>
+                    <button class="add-to-cart" data-id="3" data-name="Spider Plant" data-price="19.99">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-color: #66bb6a;">
+                        <div class="plant-icon">💧</div>
+                        <button class="quick-view" data-id="4">Quick View</button>
+                    </div>
+                    <h3>Self-Watering Pot</h3>
+                    <p class="price">$29.99</p>
+                    <p class="health-benefit">Prevents overwatering · Healthy roots</p>
+                    <button class="add-to-cart" data-id="4" data-name="Self-Watering Pot" data-price="29.99">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="health-tips">
+            <h2>Plant Health Tips</h2>
+            <div class="tips-container">
+                <div class="tip-card">
+                    <div class="tip-icon">💡</div>
+                    <h3>Proper Lighting</h3>
+                    <p>Most plants need bright, indirect sunlight for optimal growth.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">💦</div>
+                    <h3>Water Wisely</h3>
+                    <p>Overwatering is the most common cause of plant health issues.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🌡️</div>
+                    <h3>Right Temperature</h3>
+                    <p>Keep plants away from drafts and extreme temperature changes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Your Plant Cart</h2>
+            <button class="close-cart" id="closeCart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-total">
+            Total: $<span id="cartTotal">0.00</span>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2 id="modalTitle">Product Details</h2>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
